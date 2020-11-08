@@ -1,0 +1,222 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #1b4361;
+}
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+  padding-top: 14px;
+}
+.nav-link li{
+  list-style: none;
+}
+.nav-links a{
+  text-decoration: none;
+  color: #ddd;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.nav-links a:hover{
+  background: #1b9bff;
+  transition: .5s;
+  text-decoration: none;
+  color: #fff;
+}
+.menu{
+  display: none;
+  cursor: pointer;
+}
+.menu div{
+   width: 25px;
+   height: 3px;
+   background-color: #fff;
+   margin: 5px;
+   transition:all .3s ease ;
+   -webkit-transition:all .3s ease ;
+   -moz-transition:all .3s ease ;
+   -ms-transition:all .3s ease ;
+   -o-transition:all .3s ease ;
+}
+@media (max-width:1024px){
+.nav-links{
+  width: 60%;
+}
+  }
+@media (max-width:768px){
+  body{
+    overflow-x: hidden;
+    }
+  .nav-links{
+     position: absolute;
+     right: 0px;
+     height: 92vh;
+     top: 8vh;
+     background-color: #1b4361;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 50%;
+     transform: translateX(100%);
+     -webkit-transform: translateX(100%);
+     -moz-transform: translateX(100%);
+     -ms-transform: translateX(100%);
+     -o-transform: translateX(100%);
+     transition: transform .5s ease-in;
+     -webkit-transition: transform .5s ease-in;
+     -moz-transition: transform .5s ease-in;
+     -ms-transition: transform .5s ease-in;
+     -o-transition: transform .5s ease-in;
+ }
+   .nav-links li{
+     opacity: 0;
+}
+   .menu{
+      display: block;
+  
+}
+
+     }
+.nav-active{
+      transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      -o-transform: translateX(0%);
+    
+    }
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    -o-transform: translateX(50px);
+}
+to{
+  opacity: 1;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+}
+}
+.toggle .line1{
+  transform: rotate(-45deg)translate(-5px,6px);
+  -webkit-transform: rotate(-45deg)translate(-5px,6px);
+  -moz-transform: rotate(-45deg)translate(-5px,6px);
+  -ms-transform: rotate(-45deg)translate(-5px,6px);
+  -o-transform: rotate(-45deg)translate(-5px,6px);
+}
+.toggle .line2{
+opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+  -webkit-transform: rotate(45deg) translate(-5px,-6px);
+  -moz-transform: rotate(45deg) translate(-5px,-6px);
+  -ms-transform: rotate(45deg) translate(-5px,-6px);
+  -o-transform: rotate(45deg) translate(-5px,-6px);
+}
+
+#home{
+  background: url("/assets/images/banner.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+#home h4{
+font-size: 1.5rem;
+font-weight: 700;
+}
+#home p{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.text{
+  background: #F7F9FE;
+  width: 100%;
+  height: 12rem ;
+  padding-top: 5rem;
+}
+#demo-body img{
+  border: 1px solid rgba(0, 0, 0, 0.226);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+#demo-body p{
+  font-weight: 500;
+}
+#feature{
+  background: #F7F9FE;
+  width: 100%;
+}
+#feature h2{
+font-weight: 900;
+color: #50658E;
+}
+#feature .border{
+  border: 1px solid #c2c3c5 !important;
+  padding: 27px 16px;
+  margin: 5px;
+  background: #fff;
+  border-radius: 6px;
+}
+#feature .border:hover{
+  box-shadow: 0 5px 10px rgba(0,0,0,.15);
+}
+#feature .txt{
+  font-size: .9rem;
+}
+#contact .btn {
+  background: #1b4361;
+  color: #fff; 
+}
+#footer-main{
+  background: #1b4361;
+}
+#contact .btn:hover {
+  background: #1B9BFF;
+ }
+@media (max-width:766px){
+#home{
+  height: 130vh;
+}
+}
+@media (max-width:566px){
+  #feature img{
+    width: 60%;
+  }
+  }
+@media (max-width:400px){
+  #home{
+    height: 150vh;
+  }
+  }
